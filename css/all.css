@@ -1,0 +1,106 @@
+:root {
+	/* text */
+	--text: #ccc;
+	--highlight: #eee;
+	--title: #628FEC;
+	--blink: #5da5e4;
+	--text-green: #60E87A;
+	--text-blue: #628FEC;
+	--text-purple: #B462EC;
+	/* containers */
+	--bg: #0E0E10;
+	--shadow: 0px 0px 8px 2px black;
+	--profile-bg: #1E1E1E55;
+	--profile-shadow: 0px 0px 48px black, 0px 0px 32px black;
+	--bg-before: #fff0;
+	--input: #333;
+	--input-border: #444;
+	--container-bg: #0004;
+	/* nav buttons */	
+	--button-bg: rgb(24, 24, 37);
+	--selected-bg: rgb(46, 46, 67);
+	--icons: invert(100%);
+	--button-hover: brightness(120%);
+	/* cards */
+	--card-bg: #060608;
+	--card-shadow: inset 0px 0px 16px #171717, 8px 8px 16px #000;
+	--card-border: #222;
+	--card-selected-shadow: inset 0px 0px 16px #082874, 0px 0px 4px #4592e4, 0px 0px 64px #4592e444;
+	--card-selected-border: #4592e4;
+	/* gradients */
+	--gradient-A: linear-gradient(to right, rgba(46, 46, 67, 1) 35%, rgba(46, 46, 67, 0.6));
+	--gradient-B: linear-gradient(to right, rgba(24, 24, 37, 1) 35%, rgba(24, 24, 37, 0.6));
+	/* transitions */
+	--slow-transition: .6s;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../font/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf");
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	color: var(--text);
+	font-family: "Open Sans", "arial";
+	font-size: 14px;
+}
+html {
+	overflow-x: hidden; /* pour éviter l'activation du scroll lors d'un changement de page */
+}
+body {
+	background: url(../img/bg_hexagon_3.jpg), black;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+body:before {
+	content: "";
+	background: var(--bg-before);
+	width: 100vw;
+	display: block;
+	height: 100vh;
+	position: fixed;
+}
+main {
+	position: absolute;
+	width: 100vw;
+	margin-left: 100vw;
+	opacity: 0;
+	transition: margin-left .5s ease-in-out;
+}
+#CV, #article, #exam {
+	max-width: 800px;
+	margin: auto;
+	margin-top: 32px;
+	border-radius: 4px;
+	background: var(--bg);
+	box-shadow: var(--shadow);
+}
+@media (min-width: 768px) {
+	#CV, #article, #exam {
+		margin-bottom: 32px;
+		margin-top: calc(32px + 48px);
+	}
+}
+
+strong 	{ color: var(--highlight); }
+i 		{ color: var(--highlight); }
+
+.slow_transition *, .slow_transition:before {
+	transition:
+		color var(--slow-transition),
+		background var(--slow-transition),
+		background-color var(--slow-transition),
+		box-shadow var(--slow-transition),
+		border var(--slow-transition);
+}
+
+/* Responsive smartphone */
+@media (min-width: 768px) {
+	* {
+		font-size: 16px;
+	}
+}

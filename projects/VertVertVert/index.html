@@ -1,0 +1,50 @@
+<!doctype html>
+<!--
++-----------------------------------------------------------+
+| VERT VERT VERT											|
+| Created by Olivier Pyo									|
+|	Gameplay : use arrows to play 	 						|
+|	Goal : fill the map 									|
++-----------------------------------------------------------+
+-->
+<head>
+	<title>VertVertVert</title><meta charset="UTF-8">
+	<meta name="description" content="VertVertVert">
+	<meta name="author" content="Olivier Pyo">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header>
+		<h1>0.00</h1>
+	</header>
+	<section>
+		<div id="map"></div>
+	</section>
+</body>
+
+<script type="text/javascript" src="levels.js"></script>
+<script type="text/javascript" src="timer.js"></script>
+<script type="text/javascript" src="sparkles.js"></script>
+<script type="text/javascript" src="map.js"></script>
+<script type="text/javascript" src="key_event.js"></script>
+
+<script>
+
+// Start the game
+load_map(current_map);
+
+// Update timer
+function update() {
+	if(status == "playing") {
+		update_timer();
+	}
+}
+setInterval(update, 10);
+
+
+
+/*function update() {}
+let intervalId = window.setInterval(update, 1000);*/
+</script>

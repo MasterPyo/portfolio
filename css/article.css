@@ -1,0 +1,37 @@
+#article {
+	max-width: 800px;
+	border-radius: 4px;
+	background: var(--bg);
+	box-shadow: var(--shadow);
+	margin-bottom: 190px; /* car spotify en bas de page */
+}
+
+#article p {
+	padding: 20px 64px;
+}
+
+#article h1 {
+	padding-top: 28px;
+	padding-bottom: 8px;
+	font-size: 30px;
+	color: var(--highlight);
+	text-align: center;
+}
+
+#article img {
+	height: 300px;
+	margin: auto;
+	padding: 20px 0px;
+	display: block;
+}
+
+#spotify {
+	position: fixed;
+	/*left: 16px;*/
+	left: max(calc(50vw - 250px), 0px);
+	bottom: 8px;
+	z-index: 1000;
+}
+#spotify iframe {
+	border-radius: 12px;
+}

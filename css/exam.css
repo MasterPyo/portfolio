@@ -1,0 +1,53 @@
+#exam {
+	padding: 32px;
+}
+#exam form {
+	margin-bottom: 32px;
+	background: #8881;
+	padding: 32px;
+	border-radius: 8px;
+	box-shadow: var(--shadow);
+}
+#exam h1 {
+	font-size: 22px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+#exam section {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	max-width: 500px;
+	margin: auto;
+}
+#exam label {
+	text-align: right;
+	padding-right: 16px;
+}
+#exam input, #exam textarea {
+	margin-bottom: 12px;
+	background: var(--input);
+	border: 1px solid var(--input-border);
+}
+#exam textarea {
+	 resize: vertical;
+}
+#exam button {
+	border: 1px solid var(--input-border);
+	background: var(--input);
+	text-align: center;
+	padding: 10px 16px;
+	border-radius: 4px;
+	margin: auto;
+	display: block;
+	cursor: pointer;
+}
+#exam button:hover {
+	filter: var(--button-hover);
+}
+#exam input[aria-invalid="true"], #exam textarea[aria-invalid="true"] {
+	border: 2px solid #f00;
+}
+
+#exam #projects {
+	width: 320px;
+}

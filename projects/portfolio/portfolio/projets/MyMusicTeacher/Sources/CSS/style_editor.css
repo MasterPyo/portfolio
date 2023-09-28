@@ -1,0 +1,117 @@
+*
+{
+	box-sizing: border-box;
+	margin : 0px;
+	padding : 0px;
+}
+
+main #partition_editer
+{
+	width: 95%;
+	margin: 0px auto;
+	background-color: white;
+}
+
+main #partition_editer .ligne
+{
+	height: 14px;
+	background: white;
+}
+
+main #partition_editer .ligneb
+{
+	height: 3px;
+	background: black;
+}
+
+main #partition_editer .lignec
+{
+	height: 3px;
+	background: white;
+}
+
+main #partition_editer div:hover
+{
+	background-color: #FFC815;
+}
+
+main .wrapper {
+	width: 100%;
+	margin: auto;
+	margin-bottom: 25px;
+	margin-top: 25px;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+
+main #panel_editer
+{
+	margin: 10% 1% 10% 2%;
+	background-color: orange;
+	height: 295px;
+	width: 50%;
+
+	flex: 1 0 0;
+
+	background: none repeat scroll 0% 0% #FFF0DC;
+	overflow: hidden;
+	border: 1px solid #AE7A0D;
+	border-radius: 20px;
+
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	-webkit-flex-direction: column;
+	display: flex;
+	flex-direction: column;
+
+}
+
+main h3 {
+	background-image: url("../Images/bandeau_orange.png");
+	border-bottom: 1px solid #AE7A0D;
+}
+
+main section {
+	box-shadow: 1px 1px 4px #321 inset;
+	flex: 1 0 0;
+	padding: 20px;
+}
+
+main img {
+	/*width: 100px;
+	height: 100px;*/
+	background: rgba(0,0,0,0.1);
+}
+
+main #texte_editer
+{
+	margin: 10% 2% 10% 1%;
+	background-color: orange;
+	height: 295px;
+	width: 50%;
+
+	flex: 2 0 0;
+
+	background: none repeat scroll 0% 0% #FFF0DC;
+	overflow: hidden;
+	border: 1px solid #AE7A0D;
+	border-radius: 20px;
+
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	-webkit-flex-direction: column;
+	display: flex;
+	flex-direction: column;
+}
+
+.mesureSuivante{
+	height: 25px;
+	width: 200px;
+}

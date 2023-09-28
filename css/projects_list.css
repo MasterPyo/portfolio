@@ -1,0 +1,88 @@
+#projects {
+	margin-top: 32px;
+	width: 100vw;
+	background:var(--bg);
+}
+#projects h2 {
+	text-align: center;
+	font-size: 38px;
+	color: var(--highlight);
+	padding-top: 32px;
+}
+.project {
+	background-size: cover;
+	background-position: center;
+}
+.container {
+	display: flex;
+	align-items: center;
+}
+.flex1 {
+	flex: 1 0 0;
+}
+.txt {
+	padding: 32px 64px;
+	padding-right: 32px;
+	font-size: 18px;
+}
+.img {
+	padding: 32px 64px;
+	padding-left: 32px;
+}
+.txt section {
+	/*background: radial-gradient(#000, #0000);*/
+	/*background: var(--container-bg);*/
+	border-radius: 4px;
+	padding: 16px;
+}
+.img img {
+	width: 100%;
+	border-radius: 4px;
+}
+.year {
+	font-size: 14px;
+	font-weight: 1;
+}
+a {
+	color: var(--text-purple);
+}
+a:hover {
+	filter: brightness(120%);
+}
+
+/* --------- TAGS --------- */
+.tags {
+	text-align: center;
+}
+tag-block {
+	color: #86b5ff;
+	background: #12253e;
+	padding: 1px 6px;
+	margin: 2px;
+	display: inline-block;
+	border-radius: 4px;
+	opacity: 0.8;
+	font-size: 14px;
+}
+tag-block:hover {
+	opacity: 1;
+}
+/* GREEN - Album / EP / Single ----------- playable or online */
+.TAG_GREEN 			{ filter: hue-rotate(254deg); }
+.TAG_GREEN:hover 	{ filter: hue-rotate(254deg), brightness(120%); }
+/* PURPLE - Genre ------------------------ description */
+.TAG_PURPLE 		{ filter: hue-rotate(68deg); }
+.TAG_PURPLE:hover 	{ filter: hue-rotate(68deg), brightness(120%); }
+/* RED - Group project / collab ---------- */
+.TAG_RED 			{ filter: hue-rotate(125deg); }
+.TAG_RED:hover 		{ filter: hue-rotate(125deg), brightness(120%); }
+/* BLUE - Other tags --------------------- technology */
+.TAG_BLUE:hover 	{ filter: brightness(120%); }
+
+
+@media (min-width: 768px) {
+	#projects {
+		/*margin-bottom: 32px;*/
+		margin-top: 48px;
+	}
+}

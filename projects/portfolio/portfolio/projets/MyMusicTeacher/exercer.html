@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+
+	<!-- Meta servant à gérer l'affichage sur tablette/mobile : -->
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="viewport" content="width=device-width, maximum-scale=0.3, init-scale=0.3, minimum-scale=0.3, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <script> $(document).bind('touchmove',function(e) {e.preventDefault();}); /* Désactive le déplacement tactile */ </script> -->
+
+	<title>MyMusicTeacher</title>
+
+	<link rel="stylesheet" href="Sources/CSS/style.css" />
+	<!--<link rel="stylesheet" media="all and (orientation:landscape)" href="[fichier].css">--> <!-- Permet de définir l'affichage paysage pour "width" et "height" sur tablette -->
+
+	<script src="Sources/JavaScript/mode/exercer.js"></script>
+	<script src="Bibliotheques/vexflow-extended.js"></script>
+	<script src="Bibliotheques/jquery-2.1.1.min.js"></script>
+	<script src="Sources/JavaScript/partitions.js"></script>
+	<script src="Sources/JavaScript/deplacements.js"></script>
+	<script src="Sources/JavaScript/jouer.js"></script>
+	<script src="Sources/JavaScript/notation.js"></script>
+	<script src="Sources/JavaScript/video.js"></script>
+	<script src="Sources/JavaScript/detectionExercer.js"></script>
+</head>
+
+<body>
+
+
+	<header>
+		<h1><img src="Sources/Images/logo_MMT_blanc.png" alt="MyMusicTeacher" class="logo" /></h1>
+		<div class="bouton" onClick="document.location.href = 'index.html';">	<h3>Menu</h3>	</div>
+		<div class="bouton2" onClick="Jouer()">	<h3 id="jouer" >►</h3>	</div>
+
+	</header>
+
+	<div class="mode" id="titre_mode" >Exercer</div>
+
+	<main>
+
+
+			<div class="selection" id="selection">
+
+			</div><!-- selection -->
+
+			<div class="canvas" id="canvas">
+				<script>
+
+					Exercer(); // Lancement du mode "apprendre"	 
+
+					OuvrirEtAfficher("Sources/Fichiers/partition_entrainement.txt");							
+
+				</script>
+			</div><!-- partition -->
+
+			<div class="interface">
+				<div class="statistiques">
+					<div class="statGroupe">
+						<div class="cadre"><h3>Note Jouée</h3><p id="note_jouee" class="note nb2">Rien</p></div>
+						<div class="cadre"><h3>Note Demandée</h3><p id="note_demandee" class="note nb2"></p></div>
+					</div>
+					<!--<div class="statGroupe">
+						<div class="cadre"><h3>Commentaires</h3><p id="commentaire">sans commentaires !</p></div>
+						<div class="cadre"><h3>Statistiques</h3><p id="pourcent">statistiques</p></div>
+					</div>-->
+				</div>
+				<div class="video">
+					<!--<video id="videoPlayer">
+						<controls value = "false"></controls>
+						<source src="http://0390290847.free.fr/T3/Sources/Vidéos/1.mp4"></source>
+					</video>-->
+					<video id="videoPlayer" src="Sources/Videos/1.webm"  type="video/webm" preload="auto">
+					</video>
+
+
+					
+					<!--<button class="control" onclick="play('videoPlayer', this)">Play</button>
+					<button class="control" onclick="resume('videoPlayer')">Stop</button>
+					<button class="control" onclick="volume('videoPlayer',0.5)">Volume 50%</button>-->
+				</div>
+				
+			</div>
+
+
+	</main>
+
+	<footer>
+	</footer>
+
+</body>
+<div id="decompte" class="decompte"><div>
+</html>
+

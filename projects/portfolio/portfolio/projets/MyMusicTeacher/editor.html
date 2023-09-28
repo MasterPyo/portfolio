@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+
+	<!-- Meta servant à gérer l'affichage sur tablette/mobile : -->
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="viewport" content="width=device-width, maximum-scale=0.3, init-scale=0.3, minimum-scale=0.3, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+	<!--<script> $(document).bind('touchmove',function(e) {e.preventDefault();}); /* Désactive le déplacement tactile */ </script> -->
+
+	<title>MyMusicTeacher</title>
+
+	<link rel="stylesheet" href="Sources/CSS/style.css" />
+	<link rel="stylesheet" href="Sources/CSS/style_editor.css" />
+</head>
+
+<body>
+
+
+	<header>
+		<h1><img src="Sources/Images/logo_MMT_blanc.png" alt="MyMusicTeacher" class="logo" /></h1>
+		<div class="bouton" onClick="document.location.href = 'index.html';">	<h3>Menu</h3>	</div>
+	</header>
+
+	<div class="mode" id="titre_mode">Editer : Créez le morceau de vos rêves</div>
+
+	<main>
+		<div id="partition_editer">
+			<div class="ligne" id="ligne1" ></div>
+			<div class="lignec" id="ligne2" ></div>
+			<div class="ligne" id="ligne3" ></div>
+			<div class="ligneb" id="ligne4" ></div>
+			<div class="ligne" id="ligne5" ></div>
+			<div class="ligneb" id="ligne6" ></div>
+			<div class="ligne" id="ligne7" ></div>
+			<div class="ligneb" id="ligne8" ></div>
+			<div class="ligne" id="ligne9" ></div>
+			<div class="ligneb" id="ligne10" ></div>
+			<div class="ligne" id="ligne11" ></div>
+			<div class="ligneb" id="ligne12" ></div>
+			<div class="ligne" id="ligne13" ></div>
+			<div class="lignec" id="ligne14" ></div>
+			<div class="ligne" id="ligne15" ></div>
+
+		</div>
+
+		<div class="wrapper">
+			<div id="panel_editer">
+				<h3>Informations</h3>
+				<section>
+					<img draggable='true' src="Sources/Images/ronde.png" alt="ronde_editer" id="ronde_editer" />
+					<img draggable='true' src="Sources/Images/blanche.png" alt="blanche_editer" id="blanche_editer" />
+					<img draggable='true' src="Sources/Images/noire.png" alt="noire_editer" id="noire_editer" />
+					<img draggable='true' src="Sources/Images/ronde_d.png" alt="ronde_editer" id="ronde_editer" />
+					<img draggable='true' src="Sources/Images/blanche_d.png" alt="blanche_editer" id="blanche_editer" />
+					<img draggable='true' src="Sources/Images/noire_d.png" alt="noire_editer" id="noire_editer" />
+					<input id="mesureSuivante" type="submit" value="Mesure suivante" onclick="mesureSuivante()"></input>
+
+					<br/>
+					<br/>
+
+					<label for="titre_morceau">Titre</label>
+					<input type="text" name="titre_morceau" id="titre_morceau"/>
+					<br/>
+					<br/>
+					<label for="auteur_morceau">Auteur</label>
+					<input type="text" name="auteur_morceau" id="auteur_morceau"/>
+					<br/>
+					<br/>
+					<label for="nb_mesures_morceau">Nombre de mesures</label>
+					<input type="number" name="nb_mesures_morceau" id="nb_mesures_morceau" value="1" disabled="disabled"/>
+					<br/>
+					<br/>
+					<label for="tempo_morceau">Tempo</label>
+					<input type="number" name="tempo_morceau" id="tempo_morceau" value='120'/>
+
+					<input type="submit" value="Générer" onclick="ajoutParam()" />
+					
+				</section>
+			</div>
+
+			<div id="texte_editer">
+				<h3>Fichier</h3>
+				<section>
+
+					<span id="titre"></span><br/>
+					<span id="auteur"></span><br/>
+					<span id="nb_mesures"></span><br/>
+					<span id="tempo"></span>
+					<p id="generer"> - <p>
+				</section>
+			</div>
+		</div>
+
+		<script src="Sources/JavaScript/editor.js"></script>
+	</main>
+
+	<footer>
+	</footer>
+
+</body>
+<div id="decompte" class="decompte"><div>
+</html>
+

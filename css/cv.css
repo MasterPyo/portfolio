@@ -1,0 +1,173 @@
+/* Profil */
+#profil {	
+	background: url(../img/bg_hexagon_3.jpg);
+	background-size: 960px;
+	background-position-y: 39%;
+	background-position-x: center;
+}
+#profil bg-filter {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	background: var(--profile-bg);
+	height: 120px;
+}
+#profil img {
+	width: 80px;
+	height: 80px;
+	color: black;
+	box-shadow: 0px 0px 4px 1px #000000aa;
+}
+#profil section {
+	width: calc(90% - 80px);
+	text-shadow: var(--profile-shadow);
+}
+#profil h1 {
+	font-size: 24px;
+	color: var(--highlight);
+}
+
+/* Biographie */
+#bio {
+	padding: 20px 14px;
+	background: var(--bg);
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+#bio strong:nth-child(1) { color: var(--text-green); }
+#bio strong:nth-child(2) { color: var(--text-blue); }
+#bio strong:nth-child(3) { color: var(--text-purple); }
+#bio img {
+	width: 48px;
+	height: 48px;
+	border-radius: 48px;
+	color: black;
+	box-shadow: 0px 0px 4px 1px #00000066;
+}
+#bio section {
+	width: calc(95% - 64px);
+}
+
+/* Skills */
+#skill section:nth-child(1) { background-image: url(../img/skill_audio.jpg); }
+#skill section:nth-child(2) { background-image: url(../img/skill_video.jpg); }
+#skill section:nth-child(3) { background-image: url(../img/skill_modelling.jpg); }
+#skill section:nth-child(4) { background-image: url(../img/skill_programming.jpg); }
+#skill section:nth-child(1) bg-gradient { background: var(--gradient-A); }
+#skill section:nth-child(2) bg-gradient { background: var(--gradient-B); }
+#skill section:nth-child(3) bg-gradient { background: var(--gradient-B); }
+#skill section:nth-child(4) bg-gradient { background: var(--gradient-A); }
+#skill {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+#skill section {
+	background-size: cover;
+	width: 100%;
+	height: 222px;
+}
+#skill bg-gradient {
+	display: block;
+	padding: 0px 12px;
+	height: 222px;
+}
+#skill h1 {
+	font-size: 18px;
+	margin-bottom: 8px;
+	padding-top: 12px;
+	color: var(--title);
+}
+#skill img {
+	height: 40px;
+}
+
+/* Diplomes */
+#degree {
+	padding: 16px;
+	background: var(--bg);
+}
+#degree section {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 20px 0px;
+}
+#degree img {
+	width: 80px;
+	border-radius: 4px;
+}
+#degree p {
+	width: 100%;
+	padding-left: 16px;
+}
+#degree strong {
+	color: var(--text-green);
+}
+#degree label {
+	font-weight: normal;
+}
+#degree h1 {
+	font-size: 18px;
+	color: var(--title);
+}
+
+/* Responsive smartphone */
+@media (min-width: 768px) {
+	#profil {	
+		background-position-y: 29%;
+	}
+	#profil div {
+		width: 128px;
+		height: 128px;
+	}
+	#profil bg-filter {
+		height: 176px;
+	}
+	#profil section {
+		width: calc(80% - 128px);
+	}
+	#profil h1 {
+		font-size: 32px;
+	}
+	#profil img {
+		width: 140px;
+		height: 140px;
+	}
+	#bio {
+		padding: 28px 48px;
+	}
+	#skill bg-gradient {
+		padding: 0px 20px;
+	}
+	#skill h1 {
+		font-size: 22px;
+		margin-bottom: 10px;
+		padding-top: 20px;
+	}
+	#degree {
+		padding: 28px 48px;
+	}
+	#degree section {
+		margin: 24px 0px;
+	}
+	#degree h1 {
+		font-size: 22px;
+		color: var(--title);
+	}
+	#degree p {
+		padding-left: 40px;
+	}
+	#degree img {
+		width: 180px;
+		border-radius: 5px;
+	}
+}
+/* Responsive tablette */
+@media (min-width: 992px) {
+	/* le conteneur est de taille max 800px */
+}
+/* Responsive ordinateur */
+@media (min-width: 1400px) {
+	/* le conteneur est de taille max 800px */
+}

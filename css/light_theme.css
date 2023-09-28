@@ -1,0 +1,30 @@
+.light_theme {
+	/* text */
+	--text: #444;
+	--highlight: #222;
+	--title: #4A73A7;
+	--blink: #20527f;
+	/* containers */
+	--bg: #fff; /*#c0c0c8;*/
+	--shadow: 0px 0px 8px 2px #0004;
+	--profile-bg: #FFFFFFC7;
+	--profile-shadow: none;
+	--bg-before: #fff9;
+	--input: #fff;
+	--input-border: #ccc;
+	--container-bg: #fff4;
+	/* nav buttons */	
+	--button-bg: #e0e0e7;
+	--selected-bg: #d0d0f7;
+	--icons: invert(10%);
+	--button-hover: brightness(95%);
+	/* cards */
+	--card-bg: #d0d0d8;
+	--card-shadow: inset 0px 0px 16px #fff, 8px 8px 16px #0004;
+	--card-border: #fff;
+	--card-selected-shadow: inset 0px 0px 16px #c7d8ff, 0px 0px 4px #80bdff, 0px 0px 64px #5facff45;
+	--card-selected-border: #a8d2ff;
+	/* gradients */
+	--gradient-A: linear-gradient(to right, rgba(223, 223, 243, 1) 35%, rgba(223, 223, 243, 0.6));
+	--gradient-B: linear-gradient(to right, rgba(195, 195, 225, 1) 35%, rgba(195, 195, 225, 0.6));
+}

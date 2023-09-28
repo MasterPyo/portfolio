@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  	<meta charset="utf-8">
+  	<title> Test PitchDetect  </title>
+	
+</head>
+
+<body>
+	<button id="demarrer" onclick="demarrerStopAccorder()">Activer</button>
+
+	<div id="detector">
+		<div class="pitch"><span id="pitch">--</span>Hz</div>
+		<div class="note"><span id="note">--</span></div>   
+	</div>
+
+	<select id="first">
+            <option id="Mi" value="1499">Mi</option>
+            <option id="La" value="110">La</option>
+            <option id="Re" value="146">Ré</option>
+            <option id="Sol"value="196">Sol</option>
+            <option id="Si" value="246">Si</option>
+            <option id="mi" value="329">Mi</option>
+   	</select>
+
+    <p id = "tendage">test</p>
+
+      <script src="pitchdetect.js"></script>
+</body>
+</html>

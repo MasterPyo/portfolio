@@ -1,0 +1,8 @@
+Super morceau de musique;
+Two Direction;
+4;
+120;
+- e/2;w;
+- e/2;w;
+- a/2;w;
+- e/2;w;

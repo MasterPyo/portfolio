@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+
+	<!-- Meta servant à gérer l'affichage sur tablette/mobile : -->
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="viewport" content="width=device-width, maximum-scale=0.3, init-scale=0.3, minimum-scale=0.3, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+	<script> $(document).bind('touchmove',function(e) {e.preventDefault();}); /* Désactive le déplacement tactile */ </script>
+
+	<title>MyMusicTeacher</title>
+
+	<link rel="stylesheet" href="Sources/CSS/style.css" />
+
+</head>
+
+<body class="plusBackground">
+
+	<header>
+		<h1><img src="Sources/Images/logo_MMT_blanc.png" alt="MyMusicTeacher" class="logo" /></h1>
+		<h3 class="msg">♫   Pressez << F11 >> pour passer en mode plein écran   ♫</h3>
+	</header>
+
+	<script language="javascript">
+		function lancer(fichier) {
+			//ff=window.open(fichier,'','fullscreen=yes, toolbar=no,scrollbars=no,scrollbars=0');
+			document.location.href = fichier;
+		}
+	</script> 
+
+	<div class="menuPrincipal">
+		<div class="titreMenu" >
+
+			<p>Bienvenue sur le projet MyMusicTeacher</p>
+			<p class="description">Ici vous pourrez apprendre à jouer de la guitare tout en vous amusant</p>
+		</div>
+		<br/>
+		<div class="btnMenu"><p onClick="lancer('apprendre.html')">Apprendre</p></div>
+		<div class="btnMenu"><p onClick="lancer('exercer.html')">Exercer</p></div>
+		<div class="btnMenu"><p onClick="lancer('auditionner.html')">Auditionner</p></div>
+		<br/>
+		<div class="btnMenu"><p onClick="lancer('accordeur.html')">Accordeur</p></div>
+		<div class="btnMenu"><p onClick="lancer('editor.html')">Editeur</p></div>
+	</div>
+
+</body>
+</html>
+
+<!--<a href="page.html" target="plein" onClick="fullscr('demarrer_le_module.html');return false;">Cliquez ici</a>-->
